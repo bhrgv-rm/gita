@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-
+import { createProxyMiddleware } from "http-proxy-middleware";
 const Page = ({ params }: { params: { slug: string } }) => {
   const [data, setData] = useState("");
   // const url = "https://jsonplaceholder.typicode.com/posts";
@@ -9,6 +9,7 @@ const Page = ({ params }: { params: { slug: string } }) => {
 
   useEffect(() => {
     const fetchData = async () => {
+      createProxyMiddleware;
       const res = await fetch(url);
       console.log(res.status);
       const json = await res.json();
