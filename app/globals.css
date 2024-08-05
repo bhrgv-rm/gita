@@ -15,7 +15,6 @@
 body{
   width: 100vw;
   height: 100vh;
-  font-family: "Noto Sans Telugu", sans-serif;
 }
 .purport:not(:last-child){
   padding-bottom: 40px;
@@ -37,4 +36,5 @@ span{
   flex-direction: column;
   justify-content: center;
   height: 100%;
+  font-family: "Noto Sans Telugu", sans-serif;
  }
