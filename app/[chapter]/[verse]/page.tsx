@@ -38,9 +38,6 @@ const Page = ({ params }: { params: { chapter: string, verse: string } }) => {
   if (data === null) {
     return <h1>No data available</h1>;
   }
-
-  const dataEntries = Object.entries(data);
-  console.table(data.verse)
   return (
     <div className="main">
     <h1>{`అధ్యాయం - ${params.chapter}, శ్లోకం - ${params.verse}`}</h1>
